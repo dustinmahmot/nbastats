@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build-meta"
+
+[project]
+name = "nbastats"
+version = "0.1"
+dependencies = [
+    "tkinter",
+    "selenium",
+    "ChromeDriverManager",
+    "GeckoDriverManager", 
+    "BeautifulSoup", 
+    "pandas", 
+    "json"
+]
+requires-python = ">=3.8"
+
+description = "Scrapes nba.com for player data, and displays the formatted data in a basic GUI"
