@@ -40,8 +40,8 @@ def scrape(LAST_GAME=False,ALL_PLAYERS=True):
     url = "https://www.nba.com/stats/players/traditional?PerMode=PerGame&sort=PTS&dir=-1"
 
     print("loading website...")
-    # browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     
     browser.get(url)
     browser.minimize_window()
